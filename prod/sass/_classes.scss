@@ -2,3 +2,10 @@
 	font:{family:'Oswald', sans-serif;}
 	text:{transform:uppercase;}
 }
+// Usage
+//@media (max-width: $screen-xs-max) { ... }
+//@media (min-width: $screen-sm-min) { ... }
+//@media (max-width: $screen-sm-max) { ... }
+//@media (min-width: $screen-md-min) { ... }
+//@media (max-width: $screen-md-max) { ... }
+//@media (min-width: $screen-lg-min) { ... }

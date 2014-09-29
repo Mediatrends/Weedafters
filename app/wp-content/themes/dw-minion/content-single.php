@@ -17,7 +17,7 @@
 	<?php else : ?>
 
 	<div class="entry-content">
-		<?php the_content( __( 'Continua Leyendo <span class="meta-nav">&rarr;</span>', 'dw-minion' ) ); ?>
+		<?php the_content( __( 'Continúa Leyendo <span class="meta-nav">&rarr;</span>', 'dw-minion' ) ); ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">',

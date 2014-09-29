@@ -1,5 +1,13 @@
 body{
-	#page{
-		padding:{top:20px;}
+	@media (min-width: $screen-lg-min) {
+		#page{
+			padding:{top:20px;}
+		}	
+	}
+	.content-list{
+		.hentry{
+			margin:{bottom:20px;}
+			padding: {top:20px;}
+		}
 	}
 }
