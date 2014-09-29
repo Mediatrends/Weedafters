@@ -7,21 +7,28 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>
+
+<link rel="stylesheet" href="<?php echo get_template_directory_uri('/'); ?>/assets/css/main_mt.css">
+<!-- bower:js -->
+<!-- endbower -->
+
 </head>
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<div class="container clearfix">
 		<?php do_action( 'before' ); ?>
+
 		<div id="navigation" class="site-nav">
 			<div class="site-nav-inner">
 				<div class="container">
-					<header id="masthead" class="site-header" role="banner">
+					<header id="masthead" class="site-header text-center" role="banner">
 						<?php dw_minion_logo(); ?>
 					</header>
 					<?php get_sidebar(); ?>
 				</div>
 			</div>
 		</div>
+
         <?php do_action( 'after_navigation' ); ?>
 		<div id="main" class="site-main">
 			<div class="site-main-inner">

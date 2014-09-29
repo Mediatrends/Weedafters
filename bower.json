@@ -1,0 +1,24 @@
+{
+  "name": "weedafters",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Mediatrends/Weedafters",
+  "authors": [
+    "Mediatrends <mauro@mediatrends.cl>"
+  ],
+  "description": "medios de discusion sobre marihuana",
+  "keywords": [
+    "Weed",
+    "Marihuana",
+    "Discusion",
+    "Medios"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {}
+}

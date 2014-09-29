@@ -1,0 +1,40 @@
+body{
+	@extend .font_real;
+	h1{
+		@extend .font_real;
+	}
+	h2{
+		@extend .font_real;
+	}
+	a{
+		@extend .font_real;
+		&:hover{
+			color:$color_full;
+		}
+	}
+	.entry-meta{
+		a{
+			color:$color_full;
+			&:hover{
+				color: #ccc;
+			}
+		}
+		.posted-on{
+			a{
+				&:hover{
+					color:$color_full;
+				}
+			}
+		}
+		.comments-link{
+			a{
+				&:hover{
+					color:$color_full;
+				}
+			}
+		}
+	}
+	#page{
+		padding:{top:20px;}
+	}
+}
