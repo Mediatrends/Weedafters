@@ -5,7 +5,7 @@
 			<?php get_search_form(); ?>
 		</aside>
 		<aside id="archives" class="widget widget_archive">
-			<h3 class="widget-title"><?php _e( 'Archives', 'dw-minion' ); ?></h3>
+			<h3 class="widget-title"><?php _e( 'Archivos', 'dw-minion' ); ?></h3>
 			<ul>
 				<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
 			</ul>

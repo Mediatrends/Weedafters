@@ -7,7 +7,7 @@
 	<div class="entry-thumbnail"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a></div>
 	<?php endif; ?>
 	<div class="entry-content"> 
-		<?php the_content( __( '<span class="btn btn-small">Continue reading</span>', 'dw-minion' ) ); ?>
+		<?php the_content( __( '<span class="btn btn-small">Continua leyendo</span>', 'dw-minion' ) ); ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">',

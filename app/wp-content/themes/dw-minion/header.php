@@ -22,7 +22,12 @@
 			<div class="site-nav-inner">
 				<div class="container">
 					<header id="masthead" class="site-header text-center" role="banner">
-						<?php dw_minion_logo(); ?>
+						<?php // dw_minion_logo(); ?>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+							
+							<img src="<?php echo get_template_directory_uri('/'); ?>/assets/img/logo.png" alt="">
+
+						</a>
 					</header>
 					<?php get_sidebar(); ?>
 				</div>

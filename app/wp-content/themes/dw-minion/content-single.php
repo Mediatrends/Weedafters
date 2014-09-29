@@ -3,16 +3,21 @@
 		<?php if( ! has_post_format('quote') ) : ?><h1 class="entry-title"><?php the_title(); ?></h1><?php endif; ?>
 		<?php dw_minion_entry_meta(); ?>
 	</header>
-	<?php if( has_post_thumbnail() ) : ?>
-	<div class="entry-thumbnail"><?php the_post_thumbnail(); ?></div>
-	<?php endif; ?>
+
+	<?php // if( has_post_thumbnail() ) : ?>
+	<!-- div class="entry-thumbnail"><?php the_post_thumbnail(); ?></div-->
+	<?php //endif; ?>
+
 	<?php if (  ( is_home() || is_tag() || is_category() || is_date() || is_search() ) ) : ?>
+
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div>
+
 	<?php else : ?>
+
 	<div class="entry-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'dw-minion' ) ); ?>
+		<?php the_content( __( 'Continua Leyendo <span class="meta-nav">&rarr;</span>', 'dw-minion' ) ); ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">',

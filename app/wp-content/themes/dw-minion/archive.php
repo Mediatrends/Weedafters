@@ -5,19 +5,19 @@
 			<h1 class="page-title">
 				<?php
 					if ( is_category() ) :
-						printf( __( 'Category Archives: %s', 'dw-minion' ), single_cat_title( '', false ) );
+						printf( __( 'Archivos Categoria: %s', 'dw-minion' ), single_cat_title( '', false ) );
 					elseif ( is_tag() ) :
-						printf( __( 'Tag Archives: %s', 'dw-minion' ), single_tag_title( '', false ) );
+						printf( __( 'Archivos Tag: %s', 'dw-minion' ), single_tag_title( '', false ) );
 					elseif ( is_author() ) :
 						the_post();
-						printf( __( 'Author: %s', 'dw-minion' ), '<span class="vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' );
+						printf( __( 'Autor: %s', 'dw-minion' ), '<span class="vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' );
 						rewind_posts();
 					elseif ( is_day() ) :
-						printf( __( 'Day: %s', 'dw-minion' ), '<span>' . get_the_date() . '</span>' );
+						printf( __( 'Día: %s', 'dw-minion' ), '<span>' . get_the_date() . '</span>' );
 					elseif ( is_month() ) :
-						printf( __( 'Month: %s', 'dw-minion' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
+						printf( __( 'Mes: %s', 'dw-minion' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
 					elseif ( is_year() ) :
-						printf( __( 'Year: %s', 'dw-minion' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
+						printf( __( 'Año: %s', 'dw-minion' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
 					elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
 						_e( 'Asides', 'dw-minion' );
 					elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
